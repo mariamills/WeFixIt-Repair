@@ -243,7 +243,7 @@ nav .container{
     font-weight: 300;
 }
 
-.box{
+.get-started .box{
     background-color: #F9F8F4;
     padding: 14px;
     margin-top: 3rem;
@@ -251,19 +251,19 @@ nav .container{
     box-shadow: var(--box-shadow);
 }
 
-.box h1{
+.get-started .box h1{
     font-size: 5rem;
     color: var(--green);
 }
 
-.box h3{
+.get-started .box h3{
     font-size: 2rem;
     font-weight: 200;
     padding: 1rem 0;
     margin: 0 0 10px;
 }
 
-.box p{
+.get-started .box p{
     font-size: 1.5rem;
     letter-spacing: 1px;
     line-height: 27px;
@@ -272,38 +272,85 @@ nav .container{
     font-weight: 100;
 }
 
-.box a{
+.get-started .box a{
     color: var(--orange);
     text-decoration: underline;
     font-size: 1.5rem;
     transition: color 0.2s linear;
 }
 
-.row{
+.get-started .row{
     margin-top: 5rem;
 }
 
-.row h3{
+.get-started .row h3{
     font-size: 3rem;
     font-weight: 300;
 }
 
-.row p{
+.get-started .row p{
     font-size: 1.5rem;
 }
 
-.row button{
+.get-started .row button{
     margin-top: 2rem;
 }
 
-.box h3:hover{
+.get-started .box h3:hover{
     color: var(--orange);
     cursor: pointer;
 }
 
-.box a:hover{
+.get-started .box a:hover{
     color: var(--green);
     text-decoration: none;
+}
+
+.services{
+    text-align: center;
+    background-color: #F9F8F4;
+}
+
+.services .container{
+    display: grid;
+}
+
+.services .box-title{
+    margin: 5rem 0;
+}
+
+
+.services .box-title h1{
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.services .box-title p{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.services .box{
+    border: 3px solid #fff;
+    padding: 3rem;
+}
+
+.services .box h1{
+    font-size: 3rem;
+    color: var(--orange);
+}
+
+.services .box h3{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.services .box p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 300;
 }
 
 
@@ -315,7 +362,7 @@ nav .container{
 
 
 @media (max-width: 1400px){
-    .col-span-3{
+    .get-started .col-span-3{
         grid-column: span 6;
     }
 }
@@ -358,8 +405,14 @@ nav .container{
         text-align: center;
         margin-left: 0;
     }
-    .col-span-3{
+    .get-started .col-span-3{
         grid-column: span 12;
+    }
+}
+
+@media (max-width: 768px){
+    .services .col-span-3{
+        grid-column: span 6;
     }
 }
 
@@ -380,5 +433,8 @@ nav .container{
 @media (max-width: 390px){
     .nav-links{
         top: 25rem;
+    }
+    .services .col-span-3{
+        grid-column: span 12;
     }
 }
