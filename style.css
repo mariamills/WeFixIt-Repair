@@ -218,7 +218,9 @@ nav .container{
     text-align: center;
 }
 
-.get-started .container{
+.get-started .container,
+.about .container{
+    display: -ms-grid;
     display: grid;
     gap: 3rem;
     margin: 0 30rem;
@@ -230,6 +232,10 @@ nav .container{
 
 .col-span-3{
     grid-column: span 3;
+}
+
+.col-span-6{
+    grid-column: span 6;
 }
 
 .get-started h1{
@@ -312,6 +318,7 @@ nav .container{
 }
 
 .services .container{
+    display: -ms-grid;
     display: grid;
 }
 
@@ -320,13 +327,15 @@ nav .container{
 }
 
 
-.services .box-title h1{
+.services .box-title h1,
+.about .about-title h1{
     font-size: 3.5rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
 }
 
-.services .box-title p{
+.services .box-title p,
+.about .about-title p{
     font-size: 1.5rem;
     font-weight: 200;
 }
@@ -354,6 +363,66 @@ nav .container{
 }
 
 
+.about{
+    text-align: center;
+    padding: 2rem;
+}
+
+.about .box{
+    text-align: left;
+    margin-top: 3rem;
+}
+
+.about .box .p-1{
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 3.5rem;
+    color: #C45D3C;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+}
+
+.about .box .p-2,
+.about .box .p-3{
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+}
+
+.about .box h3{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.testimonial{
+    background-color: #375b63;
+}
+
+.testimonial .container{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+}
+
+.testimonial img{
+    width: 100%;
+}
+
+.testimonial .box{
+    padding: 10rem;
+}
+
+.testimonial .box h1{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+
 
 
 
@@ -364,6 +433,10 @@ nav .container{
 @media (max-width: 1400px){
     .get-started .col-span-3{
         grid-column: span 6;
+    }
+    .about .col-span-6{
+        grid-column: span 12;
+        text-align: center;
     }
 }
 
@@ -408,6 +481,14 @@ nav .container{
     .get-started .col-span-3{
         grid-column: span 12;
     }
+    
+    .about .container{
+        margin: 0;
+    }
+
+    .about img{
+        width: 50%;
+    }
 }
 
 @media (max-width: 768px){
@@ -423,18 +504,32 @@ nav .container{
     }
 }
 
-@media (max-width: 493px){
+@media (max-width: 494px){
     .nav-links{
         top: 20rem;
     }
 }
 
 
-@media (max-width: 390px){
+@media (max-width: 392px){
     .nav-links{
         top: 25rem;
     }
     .services .col-span-3{
         grid-column: span 12;
+    }
+
+    .get-started .container{
+        margin: 0;
+        gap: 0;
+    }
+
+    .about .container{
+        margin: 0;
+        gap: 0;
+    }
+
+    .about img{
+        display: none;
     }
 }
