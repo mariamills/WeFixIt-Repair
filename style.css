@@ -19,6 +19,10 @@
     text-decoration: none;
 }
 
+*::selection {
+    background: #FFECB3;
+  }
+
 *::-webkit-scrollbar{
     height: .5rem;
     width: 1rem;
@@ -205,6 +209,39 @@ nav .container{
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
+
+.get-started{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    text-align: center;
+}
+
+.get-started .container{
+    display: grid;
+}
+
+.col-span-12{
+    grid-column: span 12;
+}
+
+.col-span-3{
+    grid-column: span 3;
+}
+
+.get-started h1{
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.get-started p{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+
 
 
 
