@@ -279,6 +279,23 @@ nav .container{
     transition: color 0.2s linear;
 }
 
+.row{
+    margin-top: 5rem;
+}
+
+.row h3{
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.row p{
+    font-size: 1.5rem;
+}
+
+.row button{
+    margin-top: 2rem;
+}
+
 .box h3:hover{
     color: var(--orange);
     cursor: pointer;
@@ -297,7 +314,11 @@ nav .container{
 
 
 
-
+@media (max-width: 1400px){
+    .col-span-3{
+        grid-column: span 6;
+    }
+}
 
 
 @media (max-width: 992px){
@@ -336,6 +357,9 @@ nav .container{
     .landing .container{
         text-align: center;
         margin-left: 0;
+    }
+    .col-span-3{
+        grid-column: span 12;
     }
 }
 
