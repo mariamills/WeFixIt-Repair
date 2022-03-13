@@ -214,12 +214,14 @@ nav .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
+    padding: 5rem 0;
     text-align: center;
 }
 
 .get-started .container{
     display: grid;
+    gap: 3rem;
+    margin: 0 30rem;
 }
 
 .col-span-12{
@@ -239,6 +241,52 @@ nav .container{
 .get-started p{
     font-size: 1.5rem;
     font-weight: 300;
+}
+
+.box{
+    background-color: #F9F8F4;
+    padding: 14px;
+    margin-top: 3rem;
+    text-align: left;
+    box-shadow: var(--box-shadow);
+}
+
+.box h1{
+    font-size: 5rem;
+    color: var(--green);
+}
+
+.box h3{
+    font-size: 2rem;
+    font-weight: 200;
+    padding: 1rem 0;
+    margin: 0 0 10px;
+}
+
+.box p{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 27px;
+    padding: 0.5rem 0;
+    margin: 0 0 30px;
+    font-weight: 100;
+}
+
+.box a{
+    color: var(--orange);
+    text-decoration: underline;
+    font-size: 1.5rem;
+    transition: color 0.2s linear;
+}
+
+.box h3:hover{
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.box a:hover{
+    color: var(--green);
+    text-decoration: none;
 }
 
 
