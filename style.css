@@ -183,6 +183,30 @@ nav .container{
     margin-left: auto;
 }
 
+.landing {
+    background: no-repeat url(/images/Picture-2.png);
+    color: #fff;
+
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.landing .container{
+    display: block;
+    margin-left: 25rem;
+}
+
+.landing h1{
+    font-size: 6rem;
+}
+
+.landing p{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
 
 
 
@@ -218,6 +242,22 @@ nav .container{
 
     #menu:checked .nav-links{
         left: 0;
+    }
+
+    .landing{
+        justify-content: center;
+    }
+
+    .landing .container{
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px){
+
+    .landing h1{
+        font-size: 4rem;
     }
 }
 
