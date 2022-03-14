@@ -401,32 +401,6 @@ nav .container{
     background-color: #375b63;
 }
 
-.testimonial .container{
-    display: -ms-grid;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    text-align: left;
-}
-
-.testimonial img{
-    width: 100%;
-}
-
-.testimonial .box{
-    padding: 10rem;
-}
-
-.testimonial .box h1{
-    font-size: 3rem;
-    color: #fff;
-    font-weight: 400;
-}
-
-
-
-
-
-
 
 
 
