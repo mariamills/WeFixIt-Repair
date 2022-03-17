@@ -317,7 +317,8 @@ nav .container{
     background-color: #F9F8F4;
 }
 
-.services .container{
+.services .container,
+footer .container{
     display: -ms-grid;
     display: grid;
 }
@@ -325,7 +326,6 @@ nav .container{
 .services .box-title{
     margin: 5rem 0;
 }
-
 
 .services .box-title h1,
 .about .about-title h1{
@@ -396,6 +396,190 @@ nav .container{
     font-weight: 400;
     margin-bottom: 1rem;
 }
+
+.testimonal{
+    background-color: var(--green);
+    color: #fff;
+}
+
+.testimonal h1{
+    font-size: 3rem;
+    text-align: center;
+    padding: 5rem 0 0 2rem;
+    font-weight: 400;
+}
+
+.swiper-wrapper{
+    padding: 3rem;
+    margin-bottom: 2rem;
+}
+
+  .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 3rem;
+  }
+
+  .swiper-slide img {
+    display: block;
+    border-radius: 50%;
+  }
+
+  .testimonal-info{
+    margin-left: 2rem;
+  }
+
+  .testimonal-info h2{
+      font-size: 2rem;
+      font-weight: 400;
+      
+  }
+
+  .testimonal-info h6{
+    font-size: 1rem;
+    color: #768c91;
+}
+
+.testimonal-info p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-style: oblique;
+    margin-top: 1rem;
+
+}
+
+.ending-info .container{
+    text-align: center;
+}
+
+.ending-info .container h1{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.ending-info .container p{
+    font-size: 1.5rem;
+}
+
+.ending-info .container img{
+    padding: 5rem;
+}
+
+.estimate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    color: #fff;
+}
+
+.estimate-info{
+    padding: 5rem;
+}
+
+.estimate-info h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.estimate-info p{
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.479);
+}
+
+.estimate button{
+    padding: 1.5rem 5rem;
+}
+
+footer .container{
+    background-color: var(--brownish);
+    padding: 5rem 20rem;
+}
+
+footer .logo{
+    padding-bottom: 3rem;
+}
+
+footer .logo a{
+    font-size: 3.5rem !important;
+}
+
+footer .container h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+.footer-section-1{
+    width: 50%;
+}
+
+
+footer .container p,
+footer .container a{
+    font-size: 1.2rem;
+    color: #8f7e79;
+    line-height: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer-section-1 span,
+footer .container .subscribe span{
+    color: var(--orange);
+}
+
+
+.footer-section-3 a:hover,
+.footer-section-4 a:hover{
+    color: var(--orange);
+}
+
+.bottom-footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1f1816;
+    padding: 1.5rem;
+    color: #8f7e79;
+}
+
+.bottom-footer .copyright{
+    font-size: 1.2rem;
+}
+
+.bottom-footer .socials{
+    font-size: 2rem;
+}
+
+.bottom-footer .socials i:hover{
+    color: var(--orange);
+    cursor: pointer;
+}
+
+footer .container .email input{
+    padding: 1rem 3rem;
+    color: #8f7e79;
+    border: var(--border);
+}
+
+footer .container .email button{
+    margin-left: 2rem;
+    padding: 1.5rem 4rem;
+}
+
+
 
 
 
