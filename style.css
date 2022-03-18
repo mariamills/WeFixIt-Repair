@@ -42,6 +42,10 @@ html{
     scroll-padding-top: 6.5rem;
 }
 
+body{
+    width: 100%;
+}
+
 header .top-bar{
     background-color: var(--tan);
     padding: 0.8rem;
@@ -483,6 +487,7 @@ footer .container{
     align-items: center;
     background-color: var(--green);
     color: #fff;
+    flex-wrap: wrap;
 }
 
 .estimate-info{
@@ -503,81 +508,95 @@ footer .container{
     padding: 1.5rem 5rem;
 }
 
+
 footer .container{
+    padding: 3rem;
+    color: var(--tan);
     background-color: var(--brownish);
-    padding: 5rem 20rem;
-}
-
-footer .logo{
-    padding-bottom: 3rem;
-}
-
-footer .logo a{
-    font-size: 3.5rem !important;
 }
 
 footer .container h2{
-    font-size: 2rem;
-    font-weight: 500;
     color: #fff;
-    padding-bottom: 2rem;
+    font-weight: 400;
+    font-size: 2.5rem;
+    padding: 1rem 0;
 }
 
-.footer-section-1{
-    width: 50%;
-}
-
-
-footer .container p,
-footer .container a{
+.footer-1 p{
+    display: flex;
+    flex-direction: column;
     font-size: 1.2rem;
-    color: #8f7e79;
     line-height: 2rem;
-    padding-bottom: 2rem;
+    padding: 1rem;
 }
 
-.footer-section-1 span,
-footer .container .subscribe span{
+.footer-1 span,
+.subscribe span{
     color: var(--orange);
 }
 
+.footer-2 p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-bottom: 0.5rem;
+}
 
-.footer-section-3 a:hover,
-.footer-section-4 a:hover{
+.footer-2 .hours{
+    padding: 2rem 2.5rem 2rem 0;
+}
+
+.footer-3 a,
+.footer-4 a{
+    color: var(--tan);
+    display: flex;
+    font-size: 1.5rem;
+    padding: 0.2rem 2.5rem 0 0;
+}
+
+.footer-3 a:hover,
+.footer-4 a:hover{
     color: var(--orange);
+}
+
+.subscribe p{
+    font-size: 1.5rem;
+}
+
+.email input{
+    padding: 1rem 10rem 1rem 1rem;
+    margin-right: 1.5rem;
+    box-shadow: var(--box-shadow);
+    background-color: #2a2b2b;
+    border: none;
+    border-radius: 1rem;
+}
+
+.email input:focus{
+    box-shadow: 1px 2px 5px 4px rgba(255, 255, 255, 0.1);
 }
 
 .bottom-footer{
     display: flex;
     justify-content: space-around;
-    background-color: #1f1816;
-    padding: 1.5rem;
-    color: #8f7e79;
+    padding: 2rem;
+    background-color: #2a2b2b;
+    color: var(--tan);
 }
 
-.bottom-footer .copyright{
-    font-size: 1.2rem;
+.copyright{
+    padding-top: 1rem;
+    font-size: 1.5rem;
 }
 
-.bottom-footer .socials{
-    font-size: 2rem;
+.socials{
+    font-size: 3rem;
 }
 
-.bottom-footer .socials i:hover{
+.socials i:hover{
     color: var(--orange);
     cursor: pointer;
 }
 
-footer .container .email input{
-    padding: 1rem 3rem;
-    color: #8f7e79;
-    border: var(--border);
-}
-
-footer .container .email button{
-    margin-left: 2rem;
-    padding: 1.5rem 4rem;
-}
 
 
 
@@ -585,7 +604,7 @@ footer .container .email button{
 
 
 @media (max-width: 1400px){
-    .get-started .col-span-3{
+    .col-span-3{
         grid-column: span 6;
     }
     .about .col-span-6{
@@ -643,11 +662,25 @@ footer .container .email button{
     .about img{
         width: 50%;
     }
+
+    .estimate button{
+        margin-bottom: 2rem;
+    }
 }
 
 @media (max-width: 768px){
     .services .col-span-3{
         grid-column: span 6;
+    }
+    .email{
+        text-align: center;
+    }
+    .email input{
+        padding: 1rem 1.5rem;
+        margin: 0;
+    }
+    .email button{
+        margin-top: 1rem;
     }
 }
 
@@ -662,6 +695,9 @@ footer .container .email button{
     .nav-links{
         top: 20rem;
     }
+    .email{
+        display: none;
+    }
 }
 
 
@@ -669,7 +705,7 @@ footer .container .email button{
     .nav-links{
         top: 25rem;
     }
-    .services .col-span-3{
+    .col-span-3{
         grid-column: span 12;
     }
 
@@ -685,5 +721,16 @@ footer .container .email button{
 
     .about img{
         display: none;
+    }
+
+    .testimonal .swiper-slide img{
+       display: none;
+    }
+
+    .testimonal .swiper-slide{
+        padding: 0;
+    }
+    .swiper{
+        width: 100%;
     }
 }
