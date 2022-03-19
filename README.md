@@ -1,6 +1,6 @@
 # WeFixIt-Repair
  A front-end website built using HTML, CSS and JavaScript.  
- Swiper was used to for the Pagination dynamic.
+ Swiper was used for the testimonal slider.
  
  Screenshot(s):
  
