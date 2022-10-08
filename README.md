@@ -5,7 +5,11 @@ Swiper is a cutting-edge free mobile touch slider with incredible native behavi
 
 WeFixIt is a website created for a fictitious Digital Repair business. This was one of my earliest projects, completed when I was still learning the fundamentals of HTML, CSS, and JavaScript.
  
- Live Demo: https://wefixit-repair.pages.dev/
- Screenshot(s):
+ ## Live Demo 
+ 
+ https://wefixit-repair.pages.dev/
+ 
+ 
+ ## Screenshot(s):
  
 ![WeFixIt](https://user-images.githubusercontent.com/25801484/159074159-f86fc333-8258-4482-ba26-bf09cbf5baca.png)
